@@ -131,6 +131,7 @@ class Ui_MainWindow(object):
         self.btn_mult.clicked.connect(lambda: self.write_number(self.btn_mult.text()))
         self.btn_divide.clicked.connect(lambda: self.write_number(self.btn_divide.text()))
 
+
         self.btn_equal.clicked.connect(self.results)
 
     def write_number(self, number):
