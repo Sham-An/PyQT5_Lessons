@@ -1,13 +1,13 @@
 # -*- coding: utf-8 -*-
 
 ################################################################################
-## Form generated from reading UI file 'calcbthNXo.ui'
+## Form generated from reading UI file 'calcypHOWf.ui'
 ##
 ## Created by: Qt User Interface Compiler version 5.14.1
 ##
 ## WARNING! All changes made in this file will be lost when recompiling UI file!
 ################################################################################
-from PySide2 import QtWidgets
+
 from PySide2.QtCore import (QCoreApplication, QMetaObject, QObject, QPoint,
     QRect, QSize, QUrl, Qt)
 from PySide2.QtGui import (QBrush, QColor, QConicalGradient, QCursor, QFont,
@@ -15,16 +15,17 @@ from PySide2.QtGui import (QBrush, QColor, QConicalGradient, QCursor, QFont,
     QRadialGradient)
 from PySide2.QtWidgets import *
 
+
 class Ui_MainWindow(object):
     def setupUi(self, MainWindow):
         if MainWindow.objectName():
             MainWindow.setObjectName(u"MainWindow")
-        MainWindow.resize(300, 400)
+        MainWindow.resize(362, 400)
         self.centralwidget = QWidget(MainWindow)
         self.centralwidget.setObjectName(u"centralwidget")
         self.label_result = QLabel(self.centralwidget)
         self.label_result.setObjectName(u"label_result")
-        self.label_result.setGeometry(QRect(0, -1, 300, 61))
+        self.label_result.setGeometry(QRect(0, -1, 361, 61))
         font = QFont()
         font.setPointSize(15)
         font.setBold(True)
@@ -69,9 +70,22 @@ class Ui_MainWindow(object):
         self.btn_7 = QPushButton(self.centralwidget)
         self.btn_7.setObjectName(u"btn_7")
         self.btn_7.setGeometry(QRect(0, 60, 100, 90))
+        self.btn_plus = QPushButton(self.centralwidget)
+        self.btn_plus.setObjectName(u"btn_plus")
+        self.btn_plus.setGeometry(QRect(300, 60, 61, 90))
+        self.btn_minus = QPushButton(self.centralwidget)
+        self.btn_minus.setObjectName(u"btn_minus")
+        self.btn_minus.setGeometry(QRect(300, 150, 61, 90))
+        self.btn_mult = QPushButton(self.centralwidget)
+        self.btn_mult.setObjectName(u"btn_mult")
+        self.btn_mult.setGeometry(QRect(300, 240, 61, 90))
+        self.btn_divide = QPushButton(self.centralwidget)
+        self.btn_divide.setObjectName(u"btn_divide")
+        self.btn_divide.setGeometry(QRect(300, 330, 61, 71))
         MainWindow.setCentralWidget(self.centralwidget)
 
         self.retranslateUi(MainWindow)
+        self.btn_zero.clicked.connect(self.label_result.update)
 
         QMetaObject.connectSlotsByName(MainWindow)
     # setupUi
@@ -90,4 +104,9 @@ class Ui_MainWindow(object):
         self.btn_9.setText(QCoreApplication.translate("MainWindow", u"9", None))
         self.btn_8.setText(QCoreApplication.translate("MainWindow", u"8", None))
         self.btn_7.setText(QCoreApplication.translate("MainWindow", u"7", None))
+        self.btn_plus.setText(QCoreApplication.translate("MainWindow", u"+", None))
+        self.btn_minus.setText(QCoreApplication.translate("MainWindow", u"-", None))
+        self.btn_mult.setText(QCoreApplication.translate("MainWindow", u"*", None))
+        self.btn_divide.setText(QCoreApplication.translate("MainWindow", u"/", None))
     # retranslateUi
+
